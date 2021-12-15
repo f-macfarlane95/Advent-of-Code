@@ -1,14 +1,12 @@
-import numpy as np
-from warnings import warn
 import heapq
-
+import numpy as np
 from IPython.display import Image
 from matplotlib import pyplot as plt
-plt.rcParams['figure.figsize'] = [10, 10]
+plt.rcParams['figure.figsize'] = [15, 15]
 
 class Node:
     """
-    A node class for A* Pathfinding
+    A node class for A* Pathfinding algorithm
     """
 
     def __init__(self, parent=None, position=None):
@@ -170,7 +168,6 @@ def example(print_maze = True):
     
 
     print(path)
-
     
 def visualise(maze, path):
     start = path[0]
@@ -183,5 +180,3 @@ def visualise(maze, path):
     plt.xticks([]), plt.yticks([])  # Hides the graph ticks and x / y axis
     plt.show()
     return(maze)
-    
-    
